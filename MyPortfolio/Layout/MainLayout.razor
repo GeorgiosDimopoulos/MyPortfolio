@@ -6,12 +6,13 @@
 <MudSnackbarProvider />
 
 <div class="app-root">
+    @* <NavMenu/> *@
     <MudAppBar Style="position:static" Color="Color.Dark" Elevation="1">
         <MudText Typo="Typo.h6">My personal Portfolio</MudText>
     </MudAppBar>
 
     <main class="app-main">
-        <MudContainer MaxWidth="MaxWidth.False" Class="pa-6 d-flex flex-column" Style="width:100%; flex:1;">
+        <MudContainer MaxWidth="MaxWidth.False" Class="pa-6 d-flex flex-column" Style="width:100%; flex:1; background-color:whitesmoke">
             @Body
         </MudContainer>
     </main>

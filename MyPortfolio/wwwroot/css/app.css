@@ -32,6 +32,17 @@ a, .btn-link {
     align-items: stretch; /* make children stretch vertically */
 }
 
+.tile-overlay {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-color: rgba(100, 149, 237, 0.40);
+    width: 100%;
+    height: 100%;
+    color: black;
+    padding: 0;
+}
 
 .btn-primary {
     color: #fff;
