@@ -2,6 +2,22 @@ html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+html, body, #app {
+  height: 100%;
+  margin: 0;
+}
+
+.app-root {
+    min-height: 100vh;
+    background-color: lightgray;
+}
+
+.full-height {
+    height: calc(100vh - 64px);
+    display: flex;
+    flex-direction: column;
+}
+
 h1:focus {
     outline: none;
 }
@@ -9,6 +25,13 @@ h1:focus {
 a, .btn-link {
     color: #0071c1;
 }
+
+.cards-grid {
+    flex: 1; /* fill remaining height */
+    display: flex;
+    align-items: stretch; /* make children stretch vertically */
+}
+
 
 .btn-primary {
     color: #fff;

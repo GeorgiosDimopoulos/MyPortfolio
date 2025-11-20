@@ -1,0 +1,28 @@
+html, body, #app {
+  height: 100%;
+  margin: 0;
+}
+
+.app-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-main {
+  flex: 1 1 auto;      /* main area fills remaining viewport under the header */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+
+:root { --appbar-height: 64px; }
+
+body { padding-top: var(--appbar-height); }
+
+.content-full {
+  min-height: calc(100vh - var(--appbar-height));
+  display:flex;
+  flex-direction:column;
+}

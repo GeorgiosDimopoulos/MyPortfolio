@@ -1,0 +1,17 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/MyPortfolio
+/MyPortfolio/.vs
+/MyPortfolio/obj/Debug/net8.0
+/MyPortfolio/obj/Release/net8.0
+/MyPortfolio/obj/MyPortfolio.csproj.nuget.dgspec.json
+/MyPortfolio/obj/MyPortfolio.csproj.nuget.g.props
+/MyPortfolio/obj/MyPortfolio.csproj.nuget.g.targets
+/MyPortfolio/obj/project.assets.json
+/MyPortfolio/obj/project.nuget.cache
+*.user
+/MyPortfolio/bin/Debug/net8.0
+/.vs/CopilotSnapshots/2C79E45B2662B6499617760B2B67C931
+/.vs/ProjectEvaluation
