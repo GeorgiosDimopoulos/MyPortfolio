@@ -13,11 +13,12 @@
             <MudButton Style="width:100%; 
                               height:100%;
                               background-image:
-                                linear-gradient(rgba(173, 216, 230, 0.45), rgba(173, 216, 230, 0.45)), url('images/work.png');
+                              linear-gradient(rgba(173, 216, 230, 0.45), rgba(173, 216, 230, 0.45)), url('images/work.png');
                               filter:brightness(1.2); 
                               background-size:cover;    
                               background-position:center;
-                              color:white;">
+                              color:white;"
+                       OnClick="@OnWork">
                 WORK
             </MudButton>
         </MudItem>
@@ -28,7 +29,8 @@
                               filter:brightness(1.2);
                               background-size:cover;
                               background-position:center;
-                              color:white;">
+                              color:white;"
+                       OnClick="@OnStudies">
                 STUDIES
             </MudButton>
         </MudItem>
@@ -39,9 +41,27 @@
                               filter:brightness(1.2);
                               background-size:cover;
                               background-position:center;
-                              color:white;">
+                              color:white;"
+                       OnClick="@OnLife">
                 LIFE
             </MudButton>
         </MudItem>
     </MudGrid>
 </MudContainer>
+                              
+@code {
+    private void OnStudies()
+    {
+        Nav.NavigateTo("/studies");
+    }
+    
+    private void OnWork()
+    {
+        Nav.NavigateTo("/work");
+    }
+    
+    private void OnLife()
+    {
+        Nav.NavigateTo("/life");
+    }    
+}
