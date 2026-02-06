@@ -1,7 +1,136 @@
 ﻿@page "/work"
+@using MudBlazor
 
-<h3>WorkHistory</h3>
+<MudContainer MaxWidth="MaxWidth.False" Class="mt-6 px-6">
+    <MudPaper Elevation="3" Class="p-6 w-100" Style="border-radius:16px;">
+        <MudText Typo="Typo.h3" Class="mb-1">Work</MudText>
+        <MudText Typo="Typo.subtitle1" Color="Color.Secondary" Class="mb-4">
+            Professional Experience
+        </MudText>
 
-@code {
+        <!-- TSG -->
+        <MudText Typo="Typo.h6" Class="mb-0">
+            <b>TSG Group</b>, Munich, October 2024 – Present
+        </MudText>
+        <MudText Typo="Typo.body2" Class="mud-text-secondary mb-2">
+            Technical development in the field of gas station solutions. German- and English-speaking position.
+        </MudText>
 
-}
+        <MudList T="string" Dense="true" Style="margin-top:-6px;">
+            <MudListItem T="string">
+                <MudText Typo="Typo.body1"><b>Backend and Web Development</b></MudText>
+            </MudListItem>
+
+            <MudListItem T="string" Class="ml-6">
+                <MudText Typo="Typo.body2">– Main project: .NET Blazor Web gas station management application</MudText>
+            </MudListItem>
+            <MudListItem T="string" Class="ml-6">
+                <MudText Typo="Typo.body2">– Worked on APIs, validation, and integration tests for business flows (transactions, accounts, vouchers)</MudText>
+            </MudListItem>
+            <MudListItem T="string" Class="ml-6">
+                <MudText Typo="Typo.body2">– UI work: DataGrids, filters/sorting, dialogs, and improved error handling & notifications</MudText>
+            </MudListItem>
+            <MudListItem T="string" Class="ml-6">
+                <MudText Typo="Typo.body2">– Contribution to a legacy production project in Python with small, isolated adjustments</MudText>
+            </MudListItem>
+        </MudList>
+
+        <MudDivider Class="my-4" />
+
+        <!-- Volke -->
+        <MudText Typo="Typo.h6" Class="mb-0">
+            <b>Volke Consulting Engineers</b>, BMW Group, Munich, February 2024 – July 2024
+        </MudText>
+        <MudText Typo="Typo.body2" Class="mud-text-secondary mb-2">
+            Technical development in automotive engineering. German-speaking position.
+        </MudText>
+
+        <MudList T="string" Dense="true" Style="margin-top:-6px;">
+            <MudListItem T="string">
+                <MudText Typo="Typo.body1"><b>Backend and Database Development</b> <span class="mud-text-secondary">- 6 months</span></MudText>
+            </MudListItem>
+
+            <MudListItem T="string" Class="ml-6">
+                <MudText Typo="Typo.body2">– .NET WPF frontend application with gRPC-based data access</MudText>
+            </MudListItem>
+            <MudListItem T="string" Class="ml-6">
+                <MudText Typo="Typo.body2">– Middleware backend in Java Spring Boot (service orchestration & integrations)</MudText>
+            </MudListItem>
+            <MudListItem T="string" Class="ml-6">
+                <MudText Typo="Typo.body2">– Oracle PL/SQL integration through script development (queries, procedures, maintenance)</MudText>
+            </MudListItem>
+            <MudListItem T="string" Class="ml-6">
+                <MudText Typo="Typo.body2">– Focused on clean handovers, documentation, and cross-team collaboration in German</MudText>
+            </MudListItem>
+        </MudList>
+
+        <MudDivider Class="my-4" />
+
+        <!-- Grenzebach -->
+        <MudText Typo="Typo.h6" Class="mb-0">
+            <b>Grenzebach Maschinenbau GmbH Hellas</b>, Athens, September 2021 – October 2023
+        </MudText>
+        <MudText Typo="Typo.body2" Class="mud-text-secondary mb-2">
+            Robotics and industrial automation for glass cutting. English-speaking position.
+        </MudText>
+
+        <MudList T="string" Dense="true" Style="margin-top:-6px;">
+            <MudListItem T="string">
+                <MudText Typo="Typo.body1"><b>ASP.NET Web Microservices</b> <span class="mud-text-secondary">- 14 months</span></MudText>
+            </MudListItem>
+
+            <MudListItem T="string" Class="ml-6">
+                <MudText Typo="Typo.body2">– Backend tools: Entity Framework Core integration with migrations</MudText>
+            </MudListItem>
+            <MudListItem T="string" Class="ml-6">
+                <MudText Typo="Typo.body2">– Integration & unit tests (focus on reliability and regression prevention)</MudText>
+            </MudListItem>
+            <MudListItem T="string" Class="ml-6">
+                <MudText Typo="Typo.body2">– DevOps: GitHub, Docker, Jenkins CI/CD; Agile Scrum; Jira & Confluence</MudText>
+            </MudListItem>
+
+            <MudListItem T="string" Class="mt-2">
+                <MudText Typo="Typo.body1"><b>Quality Assurance Testing</b> <span class="mud-text-secondary">- 10 months</span></MudText>
+            </MudListItem>
+
+            <MudListItem T="string" Class="ml-6">
+                <MudText Typo="Typo.body2">– UI/UX testing from an end-user perspective via VMs</MudText>
+            </MudListItem>
+            <MudListItem T="string" Class="ml-6">
+                <MudText Typo="Typo.body2">– E2E tests with Selenium; structured documentation in TestRail</MudText>
+            </MudListItem>
+        </MudList>
+
+        <MudDivider Class="my-4" />
+
+        <MudText Typo="Typo.h6" Class="mb-0">
+            <b>Metro AEBE</b>, Athens, October 2020 – August 2021
+        </MudText>
+        <MudText Typo="Typo.body2" Class="mud-text-secondary mb-2">
+            Trading and industrial company for food products. Greek-speaking position.
+        </MudText>
+
+        <MudList T="string" Dense="true" Style="margin-top:-6px;">
+            <MudListItem T="string">
+                <MudText Typo="Typo.body1"><b>Android Mobile Application</b> <span class="mud-text-secondary">- 6 months</span></MudText>
+            </MudListItem>
+
+            <MudListItem T="string" Class="ml-6">
+                <MudText Typo="Typo.body2">– .NET Xamarin Android MVVM application (processing payments via mobile devices)</MudText>
+            </MudListItem>
+            <MudListItem T="string" Class="ml-6">
+                <MudText Typo="Typo.body2">– Worked with device-focused UX and stable flows for day-to-day cashier operations</MudText>
+            </MudListItem>
+
+            <MudListItem T="string" Class="mt-2">
+                <MudText Typo="Typo.body1"><b>VB Access Application</b> <span class="mud-text-secondary">- 4 months</span></MudText>
+            </MudListItem>
+
+            <MudListItem T="string" Class="ml-6">
+                <MudText Typo="Typo.body2">– External tools: MSSQL database and IIS Microsoft Web Server (cashier app updates)</MudText>
+            </MudListItem>
+        </MudList>
+    </MudPaper>
+</MudContainer>
+
+@code { }

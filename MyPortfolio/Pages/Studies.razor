@@ -1,7 +1,97 @@
 ﻿@page "/studies"
+@using MudBlazor
 
-<h3>Studies</h3>
+<MudContainer MaxWidth="MaxWidth.Large" Class="mt-6">
+    <MudPaper Elevation="3" Class="p-6" Style="border-radius:16px;">
+        <MudStack Spacing="2">
+            <MudText Typo="Typo.h3">Studies</MudText>
 
-@code {
+            <MudText Typo="Typo.subtitle1" Color="Color.Secondary">
+                Education & Languages
+            </MudText>
 
-}
+            <MudDivider />
+
+            <MudList T="string" Dense="true" Class="mt-2">
+                <MudListItem T="string">
+                    <MudStack Spacing="1" Class="w-100">
+                        <MudStack Direction="Row" AlignItems="AlignItems.Center" Spacing="1">
+                            <MudIcon Icon="@Icons.Material.Filled.School" Color="Color.Primary" />
+                            <MudText Typo="Typo.h6" Class="mb-0">
+                                Bachelor &amp; Master in Software Engineering (Informatics)
+                            </MudText>
+                        </MudStack>
+
+                        <MudText Typo="Typo.body2" Class="ml-7 mud-text-secondary">
+                            University of the Aegean, Greece • 2014–2019
+                        </MudText>
+
+                        <MudPaper Class="ml-7 pa-3 mt-1" Elevation="0"
+                                  Style="border-radius:12px; background: rgba(25,118,210,0.06);">
+                            <MudText Typo="Typo.body2">
+                                <b>Team Projects:</b> 3–4 hackathons (e.g., StartHack by Logitech) and IT conferences
+                                (e.g., Web Summit Lisbon) — small team projects using .NET, Android, and WPF.
+                            </MudText>
+                            <MudStack Direction="Row" Spacing="1" Class="mt-2" Style="flex-wrap:wrap;">
+                                <MudChip Size="Size.Small" Variant="Variant.Outlined" Color="Color.Primary">.NET</MudChip>
+                                <MudChip Size="Size.Small" Variant="Variant.Outlined" Color="Color.Primary">Android</MudChip>
+                                <MudChip Size="Size.Small" Variant="Variant.Outlined" Color="Color.Primary">WPF</MudChip>
+                            </MudStack>
+                        </MudPaper>
+                    </MudStack>
+                </MudListItem>
+
+                <MudListItem T="string">
+                    <MudStack Spacing="1" Class="w-100">
+                        <MudStack Direction="Row" AlignItems="AlignItems.Center" Spacing="1">
+                            <MudIcon Icon="@Icons.Material.Filled.Public" Color="Color.Primary" />
+                            <MudText Typo="Typo.h6" Class="mb-0">
+                                Informatics (Exchange Studies)
+                            </MudText>
+                        </MudStack>
+
+                        <MudText Typo="Typo.body2" Class="ml-7 mud-text-secondary">
+                            University of Stuttgart (Vaihingen), Germany • 2013–2014 (2 semesters)
+                        </MudText>
+                    </MudStack>
+                </MudListItem>
+
+                <MudListItem T="string">
+                    <MudStack Spacing="1" Class="w-100">
+                        <MudStack Direction="Row" AlignItems="AlignItems.Center" Spacing="1">
+                            <MudIcon Icon="@Icons.Material.Filled.Language" Color="Color.Primary" />
+                            <MudText Typo="Typo.h6" Class="mb-0">German</MudText>
+                        </MudStack>
+
+                        <MudText Typo="Typo.body2" Class="ml-7 mud-text-secondary">
+                            C1 level (TestDaF) • Spoken for 6 months at Volke Consulting GmbH
+                        </MudText>
+
+                        <MudStack Direction="Row" Spacing="1" Class="ml-7" Style="flex-wrap:wrap;">
+                            <MudChip Size="Size.Small" Color="Color.Success" Variant="Variant.Filled">C1</MudChip>
+                            <MudChip Size="Size.Small" Color="Color.Default" Variant="Variant.Outlined">TestDaF</MudChip>
+                        </MudStack>
+                    </MudStack>
+                </MudListItem>
+
+                <MudListItem T="string">
+                    <MudStack Spacing="1" Class="w-100">
+                        <MudStack Direction="Row" AlignItems="AlignItems.Center" Spacing="1">
+                            <MudIcon Icon="@Icons.Material.Filled.Translate" Color="Color.Primary" />
+                            <MudText Typo="Typo.h6" Class="mb-0">English</MudText>
+                        </MudStack>
+
+                        <MudText Typo="Typo.body2" Class="ml-7 mud-text-secondary">
+                            B2 level (Cambridge FCE) • Spoken fluently for 2 years at Grenzebach GmbH
+                        </MudText>
+
+                        <MudStack Direction="Row" Spacing="1" Class="ml-7" Style="flex-wrap:wrap;">
+                            <MudChip Size="Size.Small" Color="Color.Info" Variant="Variant.Filled">B2</MudChip>
+                            <MudChip Size="Size.Small" Color="Color.Default" Variant="Variant.Outlined">FCE</MudChip>
+                        </MudStack>
+                    </MudStack>
+                </MudListItem>
+            </MudList>
+        </MudStack>
+    </MudPaper>
+</MudContainer>

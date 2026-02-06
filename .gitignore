@@ -15,3 +15,9 @@
 /MyPortfolio/bin/Debug/net8.0
 /.vs/CopilotSnapshots/2C79E45B2662B6499617760B2B67C931
 /.vs/ProjectEvaluation
+/MyPortfolio/bin/Release/net8.0
+/MyPortfolio/publish/publish/emcc-props.json
+/MyPortfolio/publish/publish/MyPortfolio.staticwebassets.endpoints.json
+/MyPortfolio/publish/publish/wwwroot/_framework/blazor.boot.json
+/MyPortfolio/publish/wwwroot/css
+/MyPortfolio/publish/wwwroot/_framework

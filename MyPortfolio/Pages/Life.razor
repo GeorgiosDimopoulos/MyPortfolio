@@ -1,6 +1,39 @@
 ﻿@page "/life"
+@using MudBlazor
 
-<h3>Life</h3>
+<MudContainer MaxWidth="MaxWidth.Medium" Class="mt-6">
+    <MudPaper Elevation="3" Class="p-6">
+        <MudText Typo="Typo.h3" Class="mb-2">Personal Life</MudText>
+        <MudText Typo="Typo.subtitle1" Color="Color.Secondary">Age: 32-year-old</MudText>
+
+        <MudDivider Class="my-4" />
+
+        <MudTimeline Dense="true">
+            <MudTimelineItem Icon="@Icons.Material.Filled.ChildCare" Color="Color.Primary">
+                <MudText Typo="Typo.h6">Childhood in Athens, Greece</MudText>
+                <MudText Typo="Typo.body2" Color="Color.Secondary">Until 18 years old</MudText>
+            </MudTimelineItem>
+            <MudTimelineItem Icon="@Icons.Material.Filled.Flight" Color="Color.Info">
+                <MudText Typo="Typo.h6">Youth in Stuttgart, Germany</MudText>
+                <MudText Typo="Typo.body2" Color="Color.Secondary">3 years</MudText>
+                <MudText Typo="Typo.body2" Color="Color.Primary">1.5 year German lessons</MudText>
+                <MudText Typo="Typo.body2" Color="Color.Primary">1 year Informatiks studying</MudText>
+            </MudTimelineItem>
+            <MudTimelineItem Icon="@Icons.Material.Filled.School" Color="Color.Success">
+                <MudText Typo="Typo.h6">Studies in Samos, Greece</MudText>
+                <MudText Typo="Typo.body2" Color="Color.Secondary">5 years</MudText>
+            </MudTimelineItem>
+            <MudTimelineItem Icon="@Icons.Material.Filled.Work" Color="Color.Warning">
+                <MudText Typo="Typo.h6">Work in Athens, Greece</MudText>
+                <MudText Typo="Typo.body2" Color="Color.Secondary">3 years</MudText>
+            </MudTimelineItem>
+            <MudTimelineItem Icon="@Icons.Material.Filled.LocationCity" Color="Color.Error">
+                <MudText Typo="Typo.h6">Now in Munich, Germany</MudText>
+                <MudText Typo="Typo.body2" Color="Color.Secondary">Since 2 years</MudText>
+            </MudTimelineItem>
+        </MudTimeline>
+    </MudPaper>
+</MudContainer>
 
 @code {
 
